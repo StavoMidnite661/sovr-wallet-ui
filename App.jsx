@@ -1,3 +1,5 @@
+// SOVR Wallet UI — Final Power Build with StreamTab (Corrected Paths)
+
 import React from "react";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "../components/ui/tabs";
 import WalletTab from "../components/WalletTab";
