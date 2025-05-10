@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SOVR Wallet - Crown Fire Edition</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+  <script defer src="wallet.js"></script>
+</head>
+<body class="bg-gray-950 text-white font-sans flex flex-col items-center justify-center min-h-screen p-4">
+  <img src="https://imgur.com/a/A5Xfi8c" alt="SOVR Sigil" class="w-20 h-20 mb-4 animate-pulse">
+  <h1 class="text-4xl font-bold text-purple-500 mb-2">SOVR Wallet</h1>
+  <p class="text-center text-lg mb-6 max-w-xl text-gray-300">
+    Welcome to the world’s first sovereign wallet backed by private trust law and divine flow.
+    Connect your wallet, view your vault, and echo your value.
+  </p>
+
+  <button onclick="connectWallet()" class="bg-purple-700 hover:bg-purple-600 px-6 py-2 rounded mb-6 transition">
+    🔗 Connect Wallet
+  </button>
+
+  <div id="balance" class="text-lg mb-8 text-green-400"></div>
+
+  <div class="flex flex-col items-center mb-12">
+    <h2 class="text-xl mb-2">Send MATIC</h2>
+    <input id="recipient" placeholder="Recipient address" class="px-2 py-1 rounded text-black mb-2" />
+    <input id="amount" placeholder="Amount in MATIC" class="px-2 py-1 rounded text-black mb-2" />
+    <button onclick="sendMatic()" class="bg-green-600 px-4 py-2 rounded hover:bg-green-500">Send</button>
+  </div>
+
+  <div class="bg-gray-800 p-4 rounded-lg w-full max-w-xl">
+    <h3 class="text-xl font-semibold mb-2 text-blue-400">🪙 Buy with MoonPay (Coming Soon)</h3>
+    <p class="text-gray-300 text-sm">MoonPay integration will allow you to directly fund your wallet using fiat cards.</p>
+  </div>
+
+</body>
+</html>
